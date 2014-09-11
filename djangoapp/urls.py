@@ -1,12 +1,12 @@
 from django.conf.urls.defaults import patterns, include, url
-from . import views
+from polls import views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns(#'',
-	url(r'^date/$', views.current_date),
+urlpatterns = patterns('',
+	url(r'^date$', views.current_datetime),
     # Examples:
     # url(r'^$', 'djangoapp.views.home', name='home'),
     # url(r'^djangoapp/', include('djangoapp.foo.urls')),
